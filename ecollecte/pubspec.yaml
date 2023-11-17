@@ -1,0 +1,168 @@
+name: ecollecte
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.1 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+
+# j'ai ajoute une dependance pour l'appelle telephonique
+dependencies:
+  flutter:
+    sdk: flutter
+    # pour l'url avec l'api appel et message
+  url_launcher: ^6.1.14
+  flutter_pdfview: ^1.2.7
+  path_provider: ^2.0.1 
+  # splashscreen: ^1.3.5
+  # onboarding
+  onboarding: ^3.1.0
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  get: ^4.6.6
+  flutter_onboarding_slider: ^1.0.10
+  flutter_map: ^5.0.0
+  latlong2: ^0.9.0
+  # google_maps_flutter: ^2.5.0
+  # google_maps_flutter_web: ^0.5.4+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  material_design_icons_flutter: 7.0.7296
+# flutter_icons:
+#   android: "launcher_icon"
+#   ios: true
+#   image_path: 'assets/images_launcher/icon_launcher.png'
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: 'assets/images_launcher/icon_launcher.png'
+  min_sdk_android: 50 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: 'assets/images_launcher/icon_launcher.png'
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: 'assets/images_launcher/icon_launcher.png'
+    icon_size: 250 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: 'assets/images_launcher/icon_launcher.png'
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images_bannieres/bn1.png
+    - assets/images_bannieres/pexels-andrea-piacquadio-927022.png
+    - assets/images_bannieres/pexels-christina-morillo-1181519.png
+    - assets/images_bannieres/pexels-moose-photos-1036623.jpg
+    - assets/images_pdg/pexels-andrea-piacquadio-874158.jpg
+    - assets/images_pdg/pexels-pixabay-220453.jpg
+    - assets/images_pdg/pexels-simon-robben-614810.jpg
+    - assets/images_produits/pexels-adonyi-gábor-1414642.jpg
+    - assets/images_produits/pexels-arina-krasnikova-6316537.jpg
+    - assets/images_produits/pexels-arina-krasnikova-6316670.jpg
+    - assets/images_produits/pexels-min-an-1638523.jpg
+    - assets/images_produits/pexels-neosiam-618491.jpg
+    - assets/images_produits/pexels-pixabay-255469.jpg
+    - assets/images_responsable/pexels-andrea-piacquadio-774909.jpg
+    - assets/images_logo/e.png
+    - assets/images_logo/e_appbar.png
+    - assets/images_onboard/illustration-dessin-anime-3d-amusante-homme-affaires-indien.jpg
+    - assets/images_onboard/vue-du-couple-affaires-3d.jpg
+    - assets/images_provinces/toliara.jpg
+    - assets/images_provinces/tana.jpg
+    - assets/images_provinces/tamatavy.jpg
+    - assets/images_provinces/majunga.jpg
+    - assets/images_provinces/fianarantsoa.jpg
+    - assets/images_provinces/antsiranana.jpg
+    - assets/images_loader/loader.gif
+    - assets/images_place/repr_antsiranana.webp
+    - assets/images_place/repr_fiana.webp
+    - assets/images_place/repr_maj.jpg
+    - assets/images_place/repr_tamaga.png
+    - assets/images_place/repr_tana.webp
+    - assets/images_place/repre_tu.webp
+    - assets/images_proprio/proprio.jpg
+    - assets/pdf_cv/CV APMF.pdf
+    - assets/images_client_collecteur/accord-client-collecteur.png
+    - assets/images_ceo/img1.jpg
+    - assets/images_ceo/img2.jpg
+    - assets/images_ceo/img3.jpg
+    - assets/images_ceo/img4.jpg
+    - assets/images_ceo/img5.jpg
+    - assets/images_ceo/img6.jpg
+    - assets/images_ceo/img7.jpg
+    - assets/images_ceo/img8.jpg
+    - assets/images_ceo/img9.jpg
+ 
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
